@@ -1,6 +1,9 @@
 package co.com.designpatterns;
 
 import co.com.designpatterns.builder.LaunchOrder;
+import co.com.designpatterns.factory.WebSiteFactory;
+import co.com.designpatterns.factory.WebSiteType;
+import co.com.designpatterns.factory.Website;
 import co.com.designpatterns.prototype.Movie;
 import co.com.designpatterns.prototype.Registry;
 import co.com.designpatterns.singleton.DbSingleton;
@@ -13,10 +16,20 @@ public class app {
 //        testSingletonThreadSafe();
 //        testBuilder();
 //        testPrototype();
+        testFactory();
     }
 
-    public static void testBuilder(){
-        LaunchOrder.Builder builder= new LaunchOrder.Builder();
+    public static void testFactory() {
+        Website website = WebSiteFactory.getWebsite(WebSiteType.BLOG);
+        System.out.println(website.getPages());
+
+        website = WebSiteFactory.getWebsite(WebSiteType.SHOP);
+        System.out.println(website.getPages());
+    }
+
+    //aca vemos como se implementa el patron builder
+    public static void testBuilder() {
+        LaunchOrder.Builder builder = new LaunchOrder.Builder();
 
         builder.bread("parmesano").condiments("sal").dressing("mayo").meat("pollo");
 
