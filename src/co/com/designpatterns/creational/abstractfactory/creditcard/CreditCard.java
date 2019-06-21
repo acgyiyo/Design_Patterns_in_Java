@@ -1,4 +1,4 @@
-package co.com.designpatterns.abstractfactory.creditcard;
+package co.com.designpatterns.creational.abstractfactory.creditcard;
 
 public class CreditCard {
     protected int cardNumberLength;

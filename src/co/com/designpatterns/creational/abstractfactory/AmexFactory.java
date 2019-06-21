@@ -1,11 +1,11 @@
-package co.com.designpatterns.abstractfactory;
+package co.com.designpatterns.creational.abstractfactory;
 
-import co.com.designpatterns.abstractfactory.creditcard.AmexGoldCreditCard;
-import co.com.designpatterns.abstractfactory.creditcard.AmexPlatinumCreditCard;
-import co.com.designpatterns.abstractfactory.creditcard.CreditCard;
-import co.com.designpatterns.abstractfactory.validator.AmexGoldValidator;
-import co.com.designpatterns.abstractfactory.validator.AmexPlatinumValidator;
-import co.com.designpatterns.abstractfactory.validator.Validator;
+import co.com.designpatterns.creational.abstractfactory.creditcard.AmexGoldCreditCard;
+import co.com.designpatterns.creational.abstractfactory.creditcard.AmexPlatinumCreditCard;
+import co.com.designpatterns.creational.abstractfactory.creditcard.CreditCard;
+import co.com.designpatterns.creational.abstractfactory.validator.AmexGoldValidator;
+import co.com.designpatterns.creational.abstractfactory.validator.AmexPlatinumValidator;
+import co.com.designpatterns.creational.abstractfactory.validator.Validator;
 
 public class AmexFactory extends CreditCardFactory {
 

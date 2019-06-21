@@ -1,4 +1,4 @@
-package co.com.designpatterns.factory;
+package co.com.designpatterns.creational.factory;
 
 /**
  * esta es la clase encargada de construir

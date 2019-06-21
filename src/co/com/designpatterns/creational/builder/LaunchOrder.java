@@ -1,4 +1,4 @@
-package co.com.designpatterns.builder;
+package co.com.designpatterns.creational.builder;
 
 /**
  * clase creada con el patron builder

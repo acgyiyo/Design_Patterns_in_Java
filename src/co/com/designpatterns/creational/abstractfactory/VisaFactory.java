@@ -1,11 +1,11 @@
-package co.com.designpatterns.abstractfactory;
+package co.com.designpatterns.creational.abstractfactory;
 
-import co.com.designpatterns.abstractfactory.creditcard.CreditCard;
-import co.com.designpatterns.abstractfactory.creditcard.VisaGoldCreditCard;
-import co.com.designpatterns.abstractfactory.creditcard.VisaPlatinumCreditCard;
-import co.com.designpatterns.abstractfactory.validator.Validator;
-import co.com.designpatterns.abstractfactory.validator.VisaGoldValidator;
-import co.com.designpatterns.abstractfactory.validator.VisaPlatinumValidator;
+import co.com.designpatterns.creational.abstractfactory.creditcard.CreditCard;
+import co.com.designpatterns.creational.abstractfactory.creditcard.VisaGoldCreditCard;
+import co.com.designpatterns.creational.abstractfactory.creditcard.VisaPlatinumCreditCard;
+import co.com.designpatterns.creational.abstractfactory.validator.Validator;
+import co.com.designpatterns.creational.abstractfactory.validator.VisaGoldValidator;
+import co.com.designpatterns.creational.abstractfactory.validator.VisaPlatinumValidator;
 
 public class VisaFactory extends CreditCardFactory {
 

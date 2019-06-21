@@ -1,8 +1,8 @@
-package co.com.designpatterns.factory;
+package co.com.designpatterns.creational.factory;
 
-import co.com.designpatterns.factory.Pages.CartPage;
-import co.com.designpatterns.factory.Pages.ItemPage;
-import co.com.designpatterns.factory.Pages.SearchPage;
+import co.com.designpatterns.creational.factory.Pages.CartPage;
+import co.com.designpatterns.creational.factory.Pages.ItemPage;
+import co.com.designpatterns.creational.factory.Pages.SearchPage;
 
 public class Shop extends Website{
     @Override

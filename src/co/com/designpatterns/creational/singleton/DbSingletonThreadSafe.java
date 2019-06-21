@@ -1,4 +1,4 @@
-package co.com.designpatterns.singleton;
+package co.com.designpatterns.creational.singleton;
 
 /**
  * este singleton esta protegido para que difernetes hilos corriendo en la misma maquina no puedan

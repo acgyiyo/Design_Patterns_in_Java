@@ -1,4 +1,4 @@
-package co.com.designpatterns.singleton;
+package co.com.designpatterns.creational.singleton;
 
 /**
  * nuestro primer singleton de ejemplo

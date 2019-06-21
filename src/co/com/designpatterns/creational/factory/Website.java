@@ -1,6 +1,6 @@
-package co.com.designpatterns.factory;
+package co.com.designpatterns.creational.factory;
 
-import co.com.designpatterns.factory.Pages.Page;
+import co.com.designpatterns.creational.factory.Pages.Page;
 
 import java.util.ArrayList;
 import java.util.List;

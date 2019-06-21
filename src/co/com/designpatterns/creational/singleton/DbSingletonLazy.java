@@ -1,4 +1,4 @@
-package co.com.designpatterns.singleton;
+package co.com.designpatterns.creational.singleton;
 
 /**
  * la diferencia de este singleton es que no se carga al iniciar la aplicación si no, en el momento de

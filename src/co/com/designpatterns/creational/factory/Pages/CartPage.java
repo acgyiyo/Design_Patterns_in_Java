@@ -1,4 +1,4 @@
-package co.com.designpatterns.factory.Pages;
+package co.com.designpatterns.creational.factory.Pages;
 
 public class CartPage extends Page {
 }

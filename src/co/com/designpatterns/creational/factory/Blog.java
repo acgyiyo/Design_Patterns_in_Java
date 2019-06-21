@@ -1,9 +1,9 @@
-package co.com.designpatterns.factory;
+package co.com.designpatterns.creational.factory;
 
-import co.com.designpatterns.factory.Pages.AboutPage;
-import co.com.designpatterns.factory.Pages.CommentPage;
-import co.com.designpatterns.factory.Pages.ContactPage;
-import co.com.designpatterns.factory.Pages.PostPage;
+import co.com.designpatterns.creational.factory.Pages.AboutPage;
+import co.com.designpatterns.creational.factory.Pages.CommentPage;
+import co.com.designpatterns.creational.factory.Pages.ContactPage;
+import co.com.designpatterns.creational.factory.Pages.PostPage;
 
 public class Blog extends Website {
 

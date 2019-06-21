@@ -1,4 +1,4 @@
-package co.com.designpatterns.prototype;
+package co.com.designpatterns.creational.prototype;
 
 public class Movie extends Item {
     private String runTime;

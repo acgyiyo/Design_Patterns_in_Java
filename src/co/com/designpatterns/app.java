@@ -1,14 +1,17 @@
 package co.com.designpatterns;
 
-import co.com.designpatterns.builder.LaunchOrder;
-import co.com.designpatterns.factory.WebSiteFactory;
-import co.com.designpatterns.factory.WebSiteType;
-import co.com.designpatterns.factory.Website;
-import co.com.designpatterns.prototype.Movie;
-import co.com.designpatterns.prototype.Registry;
-import co.com.designpatterns.singleton.DbSingleton;
-import co.com.designpatterns.singleton.DbSingletonLazy;
-import co.com.designpatterns.singleton.DbSingletonThreadSafe;
+import co.com.designpatterns.creational.abstractfactory.CardType;
+import co.com.designpatterns.creational.abstractfactory.CreditCardFactory;
+import co.com.designpatterns.creational.abstractfactory.creditcard.CreditCard;
+import co.com.designpatterns.creational.builder.LaunchOrder;
+import co.com.designpatterns.creational.factory.WebSiteFactory;
+import co.com.designpatterns.creational.factory.WebSiteType;
+import co.com.designpatterns.creational.factory.Website;
+import co.com.designpatterns.creational.prototype.Movie;
+import co.com.designpatterns.creational.prototype.Registry;
+import co.com.designpatterns.creational.singleton.DbSingleton;
+import co.com.designpatterns.creational.singleton.DbSingletonLazy;
+import co.com.designpatterns.creational.singleton.DbSingletonThreadSafe;
 
 public class app {
 
@@ -16,9 +19,27 @@ public class app {
 //        testSingletonThreadSafe();
 //        testBuilder();
 //        testPrototype();
-        testFactory();
+//        testFactory();
+        testAbstractFactory();
     }
 
+    /**
+     * es el mismo caso del factory pero con un nivel de asbtracción mayor ya que un abstract factory es un
+     * factory de factorys
+     */
+    public static void testAbstractFactory() {
+        CreditCardFactory abstractFactory = CreditCardFactory.getCreditCardFactory(700);
+        CreditCard card = abstractFactory.getCreditCard(CardType.PLATINUM);
+        System.out.println(card.getClass());
+
+        abstractFactory = CreditCardFactory.getCreditCardFactory(500);
+        CreditCard card2 = abstractFactory.getCreditCard(CardType.GOLD);
+        System.out.println(card2.getClass());
+    }
+
+    /**
+     * podemos ver como construir un sitio web con un factory de una manera simple
+     */
     public static void testFactory() {
         Website website = WebSiteFactory.getWebsite(WebSiteType.BLOG);
         System.out.println(website.getPages());

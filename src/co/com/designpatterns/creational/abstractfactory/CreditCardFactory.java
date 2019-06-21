@@ -1,7 +1,7 @@
-package co.com.designpatterns.abstractfactory;
+package co.com.designpatterns.creational.abstractfactory;
 
-import co.com.designpatterns.abstractfactory.creditcard.CreditCard;
-import co.com.designpatterns.abstractfactory.validator.Validator;
+import co.com.designpatterns.creational.abstractfactory.creditcard.CreditCard;
+import co.com.designpatterns.creational.abstractfactory.validator.Validator;
 
 /**
  * Abstract Factory
