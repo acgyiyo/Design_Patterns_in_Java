@@ -20,7 +20,13 @@ public class app {
 //        testBuilder();
 //        testPrototype();
 //        testFactory();
-        testAbstractFactory();
+//        testAbstractFactory();
+//        testAdapter();
+    public static void testAdapter() {
+        EmployeeClient client = new EmployeeClient();
+        List<Employee> employees = client.getEmployeeList();
+
+        System.out.println(employees);
     }
 
     /**
