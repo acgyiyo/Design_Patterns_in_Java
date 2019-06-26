@@ -12,6 +12,11 @@ import co.com.designpatterns.creational.prototype.Registry;
 import co.com.designpatterns.creational.singleton.DbSingleton;
 import co.com.designpatterns.creational.singleton.DbSingletonLazy;
 import co.com.designpatterns.creational.singleton.DbSingletonThreadSafe;
+import co.com.designpatterns.structural.adapter.Employee;
+import co.com.designpatterns.structural.adapter.EmployeeClient;
+import co.com.designpatterns.structural.bridge.*;
+
+import java.util.List;
 
 public class app {
 
@@ -22,6 +27,20 @@ public class app {
 //        testFactory();
 //        testAbstractFactory();
 //        testAdapter();
+        testBridge();
+    }
+
+    public static void testBridge() {
+        Color blue = new Blue();
+        Color red = new Red();
+
+        Shape blueSquare = new Square(blue);
+        Shape redCircle = new Circle(red);
+
+        blueSquare.applyColor();
+        redCircle.applyColor();
+    }
+
     public static void testAdapter() {
         EmployeeClient client = new EmployeeClient();
         List<Employee> employees = client.getEmployeeList();
