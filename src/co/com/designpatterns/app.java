@@ -15,6 +15,8 @@ import co.com.designpatterns.creational.singleton.DbSingletonThreadSafe;
 import co.com.designpatterns.structural.adapter.Employee;
 import co.com.designpatterns.structural.adapter.EmployeeClient;
 import co.com.designpatterns.structural.bridge.*;
+import co.com.designpatterns.structural.composite.Menu;
+import co.com.designpatterns.structural.composite.MenuItem;
 
 import java.util.List;
 
@@ -27,7 +29,23 @@ public class app {
 //        testFactory();
 //        testAbstractFactory();
 //        testAdapter();
-        testBridge();
+//        testBridge();
+        testComposite();
+    }
+
+    public static void testComposite() {
+        Menu mainMenu = new Menu("Main", "/main");
+        MenuItem safetyMenuItem = new MenuItem("Safety", "/safety");
+        mainMenu.add(safetyMenuItem);
+
+        Menu claimsSubMenu = new Menu("Claims", "/claims");
+        mainMenu.add(claimsSubMenu);
+
+        MenuItem personalClaimsMenu = new MenuItem("Personal claim", "/personalClaims");
+        claimsSubMenu.add(personalClaimsMenu);
+
+        System.out.println(mainMenu.toString());
+
     }
 
     public static void testBridge() {
