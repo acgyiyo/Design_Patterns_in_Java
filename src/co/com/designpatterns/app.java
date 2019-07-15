@@ -17,6 +17,10 @@ import co.com.designpatterns.structural.adapter.EmployeeClient;
 import co.com.designpatterns.structural.bridge.*;
 import co.com.designpatterns.structural.composite.Menu;
 import co.com.designpatterns.structural.composite.MenuItem;
+import co.com.designpatterns.structural.decorator.DressingDecorator;
+import co.com.designpatterns.structural.decorator.MeatDecorator;
+import co.com.designpatterns.structural.decorator.Sandwich;
+import co.com.designpatterns.structural.decorator.SimpleSandwich;
 
 import java.util.List;
 
@@ -30,7 +34,18 @@ public class app {
 //        testAbstractFactory();
 //        testAdapter();
 //        testBridge();
-        testComposite();
+//        testComposite();
+        testDecorator();
+    }
+
+    private static void testDecorator() {
+        /*lo que estamos haciendo es armar un decorator nuevo a partir de un componente base, poniendole varias utilidades extras
+            un sandwich que es "pan" has a "carne" que a su ves has a "aderezo"
+            no se debe confundir con un patron de tipo builder ya que no estamos construyendo un objeto base, si no que estamos
+            agregando y modificando la estructura de uno existente(SimpleSandwich)*/
+        Sandwich sandwich = new DressingDecorator(new MeatDecorator(new SimpleSandwich()));
+
+        System.out.println(sandwich.make());
     }
 
     public static void testComposite() {
