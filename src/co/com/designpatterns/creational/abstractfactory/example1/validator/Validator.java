@@ -1,6 +1,6 @@
-package co.com.designpatterns.creational.abstractfactory.validator;
+package co.com.designpatterns.creational.abstractfactory.example1.validator;
 
-import co.com.designpatterns.creational.abstractfactory.creditcard.CreditCard;
+import co.com.designpatterns.creational.abstractfactory.example1.creditcard.CreditCard;
 
 public interface Validator {
 

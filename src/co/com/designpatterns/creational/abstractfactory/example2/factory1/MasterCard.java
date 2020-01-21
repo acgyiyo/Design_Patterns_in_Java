@@ -1,4 +1,6 @@
-package co.com.designpatterns.creational.abstractfactory.example2;
+package co.com.designpatterns.creational.abstractfactory.example2.factory1;
+
+import co.com.designpatterns.creational.abstractfactory.example2.factory1.Card;
 
 public class MasterCard implements Card {
   @Override
