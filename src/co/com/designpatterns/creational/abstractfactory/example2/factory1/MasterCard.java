@@ -1,0 +1,13 @@
+package co.com.designpatterns.creational.abstractfactory.example2;
+
+public class MasterCard implements Card {
+  @Override
+  public String getCardType() {
+    return "MasterCard type";
+  }
+
+  @Override
+  public String getCartdNumber() {
+    return "654 MASTER";
+  }
+}
